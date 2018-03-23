@@ -1,11 +1,18 @@
+body {
+  box-sizing: border-box;
+}
+
 .wrapper {
   width: 1600px;
   margin: 0 auto;
+}
+
+.content {
   display: flex;
   flex-flow: row nowrap;
 }
 
 .sidebar,
-.content {
+.main {
   flex:0 1 50%;
 }
