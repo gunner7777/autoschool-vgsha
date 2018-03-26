@@ -1,0 +1,47 @@
+body {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+a:visited,
+a:focus {
+  color: #000;
+}
+
+p {
+  margin: 0;
+}
+
+.page-wrapper {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.sidebar,
+.main {
+  flex:0 1 50%;
+}
+
+.disp-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}

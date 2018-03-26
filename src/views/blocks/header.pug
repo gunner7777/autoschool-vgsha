@@ -1,2 +1,19 @@
-header
-  div Header
+mixin category(path, title, alt)
+  li.category__item
+    a.category__link(href="#")
+      img.category__img(src= path, alt= alt)
+
+header.header.disp-flex
+  div.logo.disp-flex
+    div.logo__img
+      i.fas.fa-shipping-fast.logo__icon
+    div.logo__title Автошкола ВятГСХА
+  div.categories
+    ul.category.disp-flex
+      +category("images/car.svg", "Автомобиль", "car")
+      +category("images/bike.svg", "Мотоцикл", "moto")
+      +category("images/quadrocycle.svg", "Квадроцикл", "quadrocycle")
+      +category("images/snegohod.svg", "Снегоход", "snegohod")
+      +category("images/tractor.svg", "Трактор", "tractor")
+      +category("images/allroads.svg", "Вездеход", "vezdehod")
+      +category("images/harvester.svg", "Комбайн", "harvester")

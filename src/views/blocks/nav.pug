@@ -1,2 +1,16 @@
-nav
-  p menu
+mixin menu-item(text)
+  li
+    a(href="#")= text 
+
+nav.nav
+  ul.disp-flex
+    +menu-item("Акции")
+    +menu-item("Услуги")
+    +menu-item("Онлайн обучение")
+    +menu-item("Расписание")
+    +menu-item("Автодром")
+    +menu-item("Новости")
+    +menu-item("Фото")
+    +menu-item("Отзывы")
+    +menu-item("О нас")
+    +menu-item("Контакты")

@@ -1,18 +1,6 @@
-body {
-  box-sizing: border-box;
-}
-
-.wrapper {
-  width: 1600px;
-  margin: 0 auto;
-}
-
-.content {
-  display: flex;
-  flex-flow: row nowrap;
-}
-
-.sidebar,
-.main {
-  flex:0 1 50%;
-}
+@import '../vendor/fontawesome-all.min.css';
+@import 'common';
+@import 'blocks/logo/logo';
+@import 'blocks/category/category';
+@import 'blocks/nav/nav';
+@import 'blocks/footer/footer';
