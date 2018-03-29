@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');
+
 body {
   box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: $text;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
 a {
@@ -14,7 +21,7 @@ a {
 a,
 a:visited,
 a:focus {
-  color: #000;
+  /*color: $link;*/
 }
 
 p {
@@ -40,8 +47,16 @@ p {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+
+  &--align-i-center {
+    align-items: center;
+  }
 }
 
 .text-center {
   text-align: center;
+}
+
+.shell {
+  padding: 0 15px;
 }

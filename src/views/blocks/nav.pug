@@ -1,16 +1,17 @@
 mixin menu-item(text)
-  li
-    a(href="#")= text 
+  li.main-menu__item
+    a.main-menu__link(href="#")= text 
 
-nav.nav
-  ul.disp-flex
-    +menu-item("Акции")
-    +menu-item("Услуги")
-    +menu-item("Онлайн обучение")
-    +menu-item("Расписание")
-    +menu-item("Автодром")
-    +menu-item("Новости")
-    +menu-item("Фото")
-    +menu-item("Отзывы")
-    +menu-item("О нас")
-    +menu-item("Контакты")
+div.nav.shell
+  nav.nav__inner
+    ul.main-menu.disp-flex
+      +menu-item("Акции")
+      +menu-item("Услуги")
+      +menu-item("Онлайн обучение")
+      +menu-item("Расписание")
+      +menu-item("Автодром")
+      +menu-item("Новости")
+      +menu-item("Фото")
+      +menu-item("Отзывы")
+      +menu-item("О нас")
+      +menu-item("Контакты")

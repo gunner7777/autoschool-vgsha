@@ -1,0 +1,17 @@
+mixin category(path, title, alt, cat)
+  li.category__item
+    a.category__link(href="#")
+      img.category__img(src= path, alt= alt)
+      p.category__text Категория
+      p.category__text= cat
+
+div.categories
+  ul.category.disp-flex
+    +category("images/car.svg", "Автомобиль", "car", "B")
+    +category("images/bike.svg", "Мотоцикл", "moto", "A")
+    +category("images/quadrocycle.svg", "Квадроцикл", "quadrocycle", "A1")
+    +category("images/snegohod.svg", "Снегоход", "snegohod", "A1")
+    +category("images/tractor.svg", "Трактор", "tractor", "B, C, D, E")
+    +category("images/allroads.svg", "Вездеход", "vezdehod", "A2")
+    +category("images/harvester.svg", "Комбайн", "harvester", "F")
+  img.category__img-bg(src="/images/back.jpg")

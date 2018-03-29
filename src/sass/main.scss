@@ -1,6 +1,11 @@
+@import '../vendor/normalize.css';
 @import '../vendor/fontawesome-all.min.css';
+@import 'colors';
 @import 'common';
 @import 'blocks/logo/logo';
+@import 'blocks/contacts/contacts';
+@import 'blocks/button/button';
 @import 'blocks/category/category';
 @import 'blocks/nav/nav';
+@import 'blocks/main-menu/main-menu';
 @import 'blocks/footer/footer';
