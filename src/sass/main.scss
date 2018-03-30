@@ -2,6 +2,9 @@
 @import '../vendor/fontawesome-all.min.css';
 @import 'colors';
 @import 'common';
+@import 'common/media-mixin';
+@import 'common/shell';
+@import 'blocks/header/header';
 @import 'blocks/logo/logo';
 @import 'blocks/contacts/contacts';
 @import 'blocks/button/button';
@@ -9,3 +12,4 @@
 @import 'blocks/nav/nav';
 @import 'blocks/main-menu/main-menu';
 @import 'blocks/footer/footer';
+@import 'blocks/footer-menu/footer-menu'

@@ -1,0 +1,19 @@
+.shell {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.no-gutters {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@include mq(1900px) {
+  .shell {
+    max-width: 1600px;
+  }
+}

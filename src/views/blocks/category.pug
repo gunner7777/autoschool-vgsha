@@ -5,7 +5,7 @@ mixin category(path, title, alt, cat)
       p.category__text Категория
       p.category__text= cat
 
-div.categories
+div.categories.shell.no-gutters
   ul.category.disp-flex
     +category("images/car.svg", "Автомобиль", "car", "B")
     +category("images/bike.svg", "Мотоцикл", "moto", "A")
