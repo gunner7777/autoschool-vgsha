@@ -1,12 +1,14 @@
 mixin advantage(icon, title, text)
-  div
-    i(class= icon)
-    h3= title
+  div.flex-block__col3.text-center
+    i.advantage__icon(class= icon)
+    h3.advantage__title.text-uppercase= title
     p= text
 
-.advantages.shell
-  h2 Наши преимущества
-  +advantage("fas fa-desktop", "Аудитории", "Занимайтесь на современных компьютерах! Более 20 оборудованных аудиторий!")
-  +advantage("fas fa-graduation-cap", "Преподаватели", "Занятия ведут кандидаты технических наук в области автомобилестроения")
-  +advantage("fas fa-car", "Тренажеры", "Тренируйтесь не выезжая на дороги! Абсолютно безопасно, а самое главное БЕСПЛАТНО! Свободное посещение")
-  +advantage("fas fa-road", "Автодром", "Свой АВТОДРОМ! Никаких доплат! Без очереди!")
+.advantages.shell.shell--content
+  h2.block-title.text-uppercase.text-center Наши преимущества
+  div.flex-block
+    +advantage("fas fa-desktop", "Аудитории", "Занимайтесь на современных компьютерах! Более 20 оборудованных аудиторий!")
+    +advantage("fas fa-users", "Преподаватели", "(убрать?)Занятия ведут кандидаты технических наук в области автомобилестроения")
+    +advantage("fas fa-car", "Тренажеры", "(убрать?)Тренируйтесь не выезжая на дороги! Абсолютно безопасно, а самое главное БЕСПЛАТНО! Свободное посещение")
+    +advantage("fas fa-road", "Автодром", "Свой АВТОДРОМ! Никаких доплат! Без очереди!")
+    +advantage("fas fa-graduation-cap", "Студенты", "Студентам предоставляются скидки")

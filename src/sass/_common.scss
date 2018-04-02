@@ -33,15 +33,21 @@ a:focus {
   /*color: $link;*/
 }
 
-p {
+p,
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
 }
-
+/*
 .page-wrapper {
   width: 1600px;
   margin: 0 auto;
-}
+}*/
 
+
+/*
 .content {
   display: flex;
   flex-flow: row nowrap;
@@ -50,18 +56,10 @@ p {
 .sidebar,
 .main {
   flex:0 1 50%;
+}*/
+
+.block-title {
+  font-size: 35px;
+  margin: 0 0 30px 0;
 }
 
-.disp-flex {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-
-  &--align-i-center {
-    align-items: center;
-  }
-}
-
-.text-center {
-  text-align: center;
-}

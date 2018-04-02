@@ -1,9 +1,12 @@
 @import '../vendor/normalize.css';
 @import '../vendor/fontawesome-all.min.css';
 @import 'colors';
+@import 'vars';
 @import 'common';
 @import 'common/media-mixin';
 @import 'common/shell';
+@import 'common/text';
+@import 'common/flexbox';
 @import 'blocks/header/header';
 @import 'blocks/logo/logo';
 @import 'blocks/contacts/contacts';
@@ -11,5 +14,6 @@
 @import 'blocks/category/category';
 @import 'blocks/nav/nav';
 @import 'blocks/main-menu/main-menu';
+@import 'blocks/advantage/advantage';
 @import 'blocks/footer/footer';
 @import 'blocks/footer-menu/footer-menu'
