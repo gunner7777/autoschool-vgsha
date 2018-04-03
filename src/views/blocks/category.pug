@@ -1,12 +1,12 @@
 mixin category(path, title, alt, cat)
-  li.category__item
+  li.category__item.flex-block__col2
     a.category__link(href="#")
       img.category__img(src= path, alt= alt)
       p.category__text Категория
       p.category__text= cat
 
 div.categories.shell.no-gutters
-  ul.category.disp-flex
+  ul.category.flex-block.flex-block--justify-center
     +category("images/car.svg", "Автомобиль", "car", "B")
     +category("images/bike.svg", "Мотоцикл", "moto", "A")
     +category("images/quadrocycle.svg", "Квадроцикл", "quadrocycle", "A1")

@@ -6,8 +6,18 @@
 .flex-block {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
   
+  &--justify {
+    &-center {
+      justify-content: center;
+    }
+    &-sb {
+      justify-content: space-between;
+    }
+  }
+  
+  
+
   &--align {
     &-center {
       align-items: center;
@@ -80,9 +90,10 @@
   }
 }
 
+/*
 .no-gutters > [class*="flex-block__col"] {
   margin: 0 0;
-}
+}*/
 
 
 @include mq(991px) {

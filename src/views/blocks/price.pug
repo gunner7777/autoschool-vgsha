@@ -1,0 +1,26 @@
+mixin cost(name, cat, cost, time)
+  div.cost.flex-block__col3.text-center
+    h4= name
+    h4= cat
+    p #{cost} р.
+    p Срок обучения
+    p= time
+    a.button.button--medium(href="#") Подробнее
+
+.price.shell
+  h2.block-title.text-uppercase.text-center Стоимость обучения
+  div.flex-block.flex-block--justify-center
+    +cost("Автомобиль", "категория B", "22000", "от 1 месяца")
+    +cost("Мотоцикл", "категория А", "12000", "1 месяц")
+    +cost("Квадроцикл", "категория А1", "от 6000", "1 месяц")
+    +cost("Снегоход", "категория А1", "от 6000", "1 месяц")
+    +cost("Трактор", "категории B, C, D, E", "9000", "от 1 месяца")
+    +cost("Трэкол", "категория А2", "от 9000", "от 1,5 месяцев")
+    +cost("Комбайн", "категория F", "от 9000", "от 2 месяцев")
+  
+  
+  
+  
+  div#ya-map.ya-maps_full_size
+  
+  script(charset="utf-8", async, src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=DjA_m3sF_JRHD8wGFGl9sJN83gmzDFau&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false&amp;id=ya-map")
