@@ -1,6 +1,6 @@
 .categories {
   position: relative;
-  height: 400px;
+  height: 350px;
   overflow: hidden;
   
 }
@@ -10,7 +10,6 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  
 }
 
 @import '__item/category__item';
