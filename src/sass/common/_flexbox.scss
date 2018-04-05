@@ -70,6 +70,15 @@
   &__col12 {
     @include column(12);
   } 
+  &__col13 {
+    @include column(13);
+  } 
+  &__col14 {
+    @include column(14);
+  }
+  &__col15 {
+    @include column(15);
+  }
 
   &__col--margin-lg {
     margin: 0 30px;
@@ -105,22 +114,5 @@
 @include mq(767px) {
   .flex-block__col {
     @include column(12);
-  }
-}
-
-
-
-.disp-flex {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-
-  &--align-i-center {
-    align-items: center;
-  }
-
-  &__item {
-    min-width: 200px;
-    flex: 0 1 20%;
   }
 }

@@ -1,5 +1,15 @@
-.sales.shell.no-gutters
-  p Скидки и акции
-  img.category__img-bg(src="/images/offroad.jpg")
-div.thumb-wrap
+mixin sale(title, text, imgsrc)
+  .sale
+    .sale__info
+      h3.sale__title= title
+      p.sale__text= text
+    img.img-bg(src= imgsrc)
+
+
+.sale__outer.shell.shell--content.no-gutters
+  h2.block-title.text-uppercase.text-center Скидки и акции
+  +sale("Весна время для вездехода", "Получи права на вождение везедхода всего за 1 день и 10 тысяч", "/images/offroad.jpg")
+
+
+//div.thumb-wrap
   iframe(width='100%' height='100%' src='https://www.youtube.com/embed/ZPB4SES2quM' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen)
