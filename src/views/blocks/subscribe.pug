@@ -1,3 +1,13 @@
-.subscribe.shell.shell--content.text-center
-  h2.block-title.text-uppercase Курсы (теория)
-  p Как записаться на курсы? Достаточно позвонить нам по телефону 77-54-53, 42-15-16 или оставить заявку в сообщении.
+.subscribe.shell.shell--content
+  h2.block-title.text-uppercase.text-center Курсы (теория)
+  p.text-center
+    |Как записаться на курсы? Достаточно позвонить нам по телефону 77-54-53, 42-15-16
+    |или оставить заявку в сообщении. Наш сотрудник вам перезвонит
+  div.subscribe__form.flex-block.flex-block--justify-center
+    div.flex-block__col2
+      label.input-auto__label(for="visitor-name") Ваше имя
+      input.input-auto(type="text" name="name" id="visitor-name" placeholder="Ваше имя")
+    div.flex-block__col2
+      label.input-auto__label(for="visitor-phone") Ваш телефон
+      input.input-auto(type="text" name="phone" id="visitor-phone" placeholder="Ваш телефон")
+  button.button.button--medium Оставить заявку
